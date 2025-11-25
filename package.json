@@ -27,10 +27,9 @@
     "dist-tsc"
   ],
   "scripts": {
-    "bundle": "pnpm exec vite build -c ./vite.config.js",
-    "test": "pnpm exec vitest --run"
+    "prepare": "vite build -c ./vite.config.js",
+    "test": "vitest --run"
   },
-  "prepare": "npm run bundle",
   "dependencies": {
     "@material-ui/core": "~4.12.3",
     "@material-ui/icons": "~4.11.2",
